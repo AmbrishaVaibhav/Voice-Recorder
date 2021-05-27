@@ -19,18 +19,18 @@ sudo apt-get install libportaudio2
 import sounddevice as sd
 import wavio as wv
 
-# Sampling frequency
+Sampling frequency
 frequency = 44100
 
-# Recording duration
+Recording duration
 duration = 10
 (It will create a NumPy array of the recorded audio)
 
-# Start recorder with the given values of 
-# duration and sample frequency
+Start recorder with the given values of 
+duration and sample frequency
 recording = sd.rec(int(duration * frequency),samplerate=frequency, channels=2)
 
-# Record audio for the given number of seconds
+Record audio for the given number of seconds
 sd.wait()
 
 #To save the audio file
